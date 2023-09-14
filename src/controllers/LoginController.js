@@ -25,7 +25,7 @@ module.exports = {
       return res.status(422).json({ msg: "senha invalida" });
     }
     try {
-      const secret = process.env.SECRET;
+      const secret = "DSHDJSIW0APCSINAIXXJSKWIDJSI";
 
       const token = jwt.sign(
         {
