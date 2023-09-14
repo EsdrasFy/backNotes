@@ -9,7 +9,7 @@ const checkAuthentication = async (req, res, next) => {
     return res.status(401).json({ msg: "acesso negado" });
   }
   try {
-    const secret = process.env.SECRET;
+    const secret = "DSHDJSIW0APCSINAIXXJSKWIDJSI";
     jwt.verify(token, secret);
     next();
   } catch (error) {
